@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "131476447115",
+    "project_id": "clone-dbab0",
+    "storage_bucket": "clone-dbab0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131476447115:android:2a634de30e890aedce198e",
+        "android_client_info": {
+          "package_name": "com.example.emarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131476447115-ia56b27kpaq8g8e4ajvep552v0pnl5bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArk5V5fHM9JJMdYW_hW6dW9fhNdPgOSGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131476447115-ia56b27kpaq8g8e4ajvep552v0pnl5bj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
