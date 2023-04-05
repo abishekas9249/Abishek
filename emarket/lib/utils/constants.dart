@@ -4,8 +4,12 @@
 // import 'package:amazon_clone/screens/home_screen.dart';
 // import 'package:amazon_clone/screens/more_screen.dart';
 // import 'package:amazon_clone/widgets/simple_product_widget.dart';
+import 'package:emarket/Screens/account_screen.dart';
+import 'package:emarket/Screens/cart_screen.dart';
 import 'package:emarket/Screens/home_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../Widgets/simple_product_widget.dart';
 
 const double kAppBarHeight = 80;
 
@@ -24,23 +28,12 @@ const List<String> categoriesList = [
   "Essential"
 ];
 
-// const List<Widget> screens = [
-//   HomeScreen(),
-//   AccountScreen(),
-//   CartScreen(),
-//   MoreScreen(),
-// ];
-
 const List<Widget> screens = [
   HomeScreen(),
+  AccountScreen(),
+  CartScreen(),
   Center(
-    child: Text("Cart Screen"),
-  ),
-  Center(
-    child: Text("Purchase Screen"),
-  ),
-  Center(
-    child: Text("Display Screen"),
+    child: Text("More Screen"),
   )
 ];
 
@@ -145,10 +138,25 @@ const String amazonLogo =
 //   )
 // ];
 
-// List<String> keysOfRating = [
-//   "Very bad",
-//   "Poor",
-//   "Average",
-//   "Good",
-//   "Excellent"
-// ];
+List<Widget> productChildren = [
+  SimpleProductWidget(
+      url: 'https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png'),
+  SimpleProductWidget(
+      url: 'https://m.media-amazon.com/images/I/116KbsvwCRL._SX90_SY90_.png'),
+  SimpleProductWidget(
+      url: 'https://m.media-amazon.com/images/I/115yueUc1aL._SX90_SY90_.png'),
+  SimpleProductWidget(
+      url: 'https://m.media-amazon.com/images/I/11qyfRJvEbL._SX90_SY90_.png'),
+  SimpleProductWidget(
+      url: 'https://m.media-amazon.com/images/I/11BIyKooluL._SX90_SY90_.png'),
+  SimpleProductWidget(
+      url: 'https://m.media-amazon.com/images/I/11CR97WoieL._SX90_SY90_.png'),
+];
+
+List<String> keysOfRating = [
+  "Very bad",
+  "Poor",
+  "Average",
+  "Good",
+  "Excellent"
+];

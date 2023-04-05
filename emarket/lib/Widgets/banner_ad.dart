@@ -15,16 +15,8 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
-    double smallAdHeight = screenSize.width / 5;
+    double smallAdHeight = screenSize.width / 4;
     return GestureDetector(
-      onHorizontalDragUpdate: (_) {
-        setState(() {
-          currentAd--;
-        });
-        if (currentAd == -1) {
-          currentAd = largeAds.length - 1;
-        }
-      },
       onHorizontalDragEnd: (_) {
         setState(() {
           currentAd++;
@@ -84,7 +76,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           shadows: [
             BoxShadow(
-                color: Colors.black.withOpacity(0.3),
+                color: Colors.black.withOpacity(0.2),
                 blurRadius: 5,
                 spreadRadius: 1)
           ]),
@@ -93,9 +85,6 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.network(smallAds[index]),
-            SizedBox(
-              height: 5,
-            ),
             Text(adItemNames[index]),
           ],
         ),
